@@ -3,7 +3,7 @@ import Header from "./Header.js";
 import Main from "./Main.js";
 import Footer from "./Footer.js";
 import PopupWithForm from "./PopupWithForm.js";
-import PopupWithImage from './PopupWithImage.js';
+import ImagePopup from './ImagePopup.js';
 
 function App() {
   const [isEditProfilePopupOpen, setisEditProfilePopupOpen] = React.useState(false);
@@ -65,9 +65,9 @@ function App() {
         <PopupWithForm btnText="Да" name="delete" title="Вы уверены?" >
 
         </PopupWithForm>
-        <PopupWithImage card={selectedCard} onClose={closeAllPopups}>
+        <ImagePopup card={selectedCard} onClose={closeAllPopups}>
 
-        </PopupWithImage>
+        </ImagePopup>
       </div>
     </div>
   );
