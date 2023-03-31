@@ -4,12 +4,12 @@ function PopupWithForm(props) {
             <div className="popup__container">
                 <button className="popup__close" onClick={props.isClose}></button>
                 <h2 className="popup__heading">{props.title}</h2>
-                <form name={`popup__${props.name}forms`} className="popup__forms">
+                <form onSubmit={props.onSubmit} name={`popup__${props.name}forms`} className="popup__forms">
                     <>{props.children}</>
                     <button className={`popup__save-button popup__${props.name}-btn`}>{props.btnText}</button>
                 </form>
             </div>
-        </div >
+        </div>
     )
 }
 

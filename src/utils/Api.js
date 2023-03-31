@@ -60,24 +60,13 @@ export class Api {
         })
             .then(res => this._handleError(res))
     }
-    putLike(cardId) {
-        return fetch(this._url + `/cards/${cardId}/likes/`,
-            {
-                method: 'PUT',
-                headers: {
-                    authorization: this._token
-                }
-            })
-            .then(res => this._handleError(res))
-    }
-    deleteLike(cardId) {
-        return fetch(this._url + `/cards/${cardId}/likes/`,
-            {
-                method: 'DELETE',
-                headers: {
-                    authorization: this._token
-                }
-            })
+    changeLikeCardStatus(cardId, isLiked) {
+        return fetch(this._url + `/cards/${cardId}/likes`, {
+            method: `${isLiked ? 'DELETE' : 'PUT'}`,
+            headers: {
+                authorization: this._token
+            }
+        })
             .then(res => this._handleError(res))
     }
     changeAvatar(url) {
@@ -88,7 +77,7 @@ export class Api {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-                avatar: url
+                avatar: `${url}`
             })
         })
             .then(res => this._handleError(res));

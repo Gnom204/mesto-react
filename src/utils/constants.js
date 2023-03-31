@@ -36,7 +36,6 @@ const validationConfig = {
 };
 
 export { initialCards, validationConfig };
-export const profilePopup = document.querySelector('.profile-popup');// Попап 
 export const buttonOpenEditProfileForm = document.querySelector('.profile__edit-button');//Кнопка открытия попапа 
 export const closeButtons = document.querySelectorAll('.popup__close');//Кнопка закрытия попапа 
 export const formEditProfile = document.querySelector('#profile-form');// формы 
@@ -45,12 +44,10 @@ export const nameDescription = document.querySelector('.popup__form_type_descrip
 export const userName = document.querySelector('.profile__title');// Имя профиля 
 export const userDescription = document.querySelector('.profile__subtitle');// Описание профиля 
 export const cardContainer = document.querySelector('.elements__container');// Контейнер с будущими карточками  
-export const popupAddCard = document.querySelector('.popup-AddCard');// Попап добавления карточек 
 export const popupAddCardForms = document.querySelector('#popupAddCardForms');// Формы попапа добавляющего карточки 
 export const popupAddCardTitle = document.querySelector('#popupAddCardTitle');// Форма названия карточки 
 export const buttonOpenAddCardForm = document.querySelector('.profile__add-button');// Кнопка открытия попапа добавляющего карточки 
 export const popupAddCardLink = document.querySelector('#popupAddCardLink');// Форма ссылки на картинку 
-export const popupBigImg = document.querySelector('.popup-img');
 export const bigImg = document.querySelector('.popup__picture');
 export const bigImgTitle = document.querySelector('.popup__description');
 export const Esc = 'Escape';
