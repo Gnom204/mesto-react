@@ -105,7 +105,7 @@ function App() {
           <Header />
           <Main onCardDelete={handleCardDelete} cards={cards} onCardLike={handleCardLike} onCardClick={handleCardClick} EditAvatarClick={handleEditAvatarClick} AddPlaceClick={handleAddPlaceClick} EditProfileClick={handleEditProfileClick} />
           <Footer />
-          <EditProfilePopup onUpdateUser={handleUpdateUser} closeAllPopups={closeAllPopups} isEditProfilePopupOpen={isEditProfilePopupOpen}></EditProfilePopup>
+          <EditProfilePopup onUpdateUser={handleUpdateUser} closeAllPopups={closeAllPopups} isOpen={isEditProfilePopupOpen}></EditProfilePopup>
           <AddPlacePopup onAddCard={handleAddPlaceSubmit} isOpen={isAddPlacePopupOpen} closeAllPopups={closeAllPopups} ></AddPlacePopup>
           <EditAvatarPopup onUpdateAvatar={handleUpdateAvatar} isOpen={isEditAvatarPopupOpen} isClose={closeAllPopups} />
           <PopupWithForm btnText="Да" name="delete" title="Вы уверены?" >
