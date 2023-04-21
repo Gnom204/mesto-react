@@ -1,6 +1,9 @@
 .header {
     padding: 45px 0 41px;
     border-bottom: solid rgba(84, 84, 84, 0.7) 1px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
 }
 
 @media screen and (max-width:880px) {

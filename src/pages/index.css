@@ -5,6 +5,11 @@
 /* Header */
 @import url(../blocks/header/header.css);
 @import url(../blocks/header/__logo/header__logo.css);
+@import url(../blocks/header/__email/header__email.css);
+@import url(../blocks/header/__link/header__link.css);
+@import url(../blocks/header/__burger-menu/header__burger-menu.css);
+@import url(../blocks/header/__burger-btn/header__burger-btn.css);
+@import url(../blocks/header/__burger-menu/_hidden/header__burger-menu_hidden.css);
 /* Profile */
 @import url(../blocks/profile/__avatar-bg/profile__avatar-bg.css);
 @import url(../blocks/profile/profile.css);
@@ -27,6 +32,14 @@
 @import url(../blocks/element/__like-amount/element__like-amount.css);
 @import url(../blocks/element/__like-group/element__like-group.css);
 @import url(../blocks/element/__like/_type/_active/element__like_active.css);
+/*Register*/
+@import url(../blocks/register/register.css);
+@import url(../blocks/register/register__button/register__button.css);
+@import url(../blocks/register/register__form/register__form.css);
+@import url(../blocks/register/register__heading/register__heading.css);
+@import url(../blocks/register/register__input/register__input.css);
+@import url(../blocks/register/register__link/register__link.css);
+@import url(../blocks/register/register__description/register__description.css);
 /* Footer */
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__copyright/footer__copyright.css);
@@ -48,3 +61,5 @@
 @import url(../blocks/popup/__form/_type/popup__form_type_error.css);
 @import url(../blocks/popup/__save-button/_disabled/popup__save-button_disabled.css);
 @import url(../blocks/popup/_dark/popup_dark.css);
+@import url(../blocks/popup/__secure-picture/popup__secure-picture.css);
+@import url(../blocks/popup/__heading/_position/popup__heading_position_center.css);
